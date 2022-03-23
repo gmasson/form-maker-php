@@ -1,6 +1,3 @@
-<?php
-include '../frmk.php';
-?>
 <!doctype html>
 <html>
 <head>
@@ -24,6 +21,8 @@ include '../frmk.php';
 	<div class="container">
 
 		<h1>Test - Form Maker PHP</h1>
+		
+		<?php include '../frmk.php'; ?>
 
 		<!--
 			frmk( 'type', 'name', 'placeholder', 'value', 'add', 'id', 'class' );
@@ -51,14 +50,14 @@ include '../frmk.php';
 
 		<div>
 			<h4>Radio</h4>
-			<?php frmk( 'radio', 'nameradio', 'Texto Radio 1', null, '1', 'idopt1' ); ?>
-			<?php frmk( 'radio', 'nameradio', 'Texto Radio 2', null, '2', 'idopt2' ); ?>
+			<?php frmk( 'radio', 'nameradio', 'Texto Radio 1', '1', null, 'idopt1' ); ?>
+			<?php frmk( 'radio', 'nameradio', 'Texto Radio 2', '2', null, 'idopt2' ); ?>
 		</div>
 
 		<div>
 			<h4>Checkbox</h4>
-			<?php frmk( 'checkbox', 'namecheckbox', 'Texto Checkbox 1', null, '1', 'idck1' ); ?>
-			<?php frmk( 'checkbox', 'namecheckbox', 'Texto Checkbox 2', null, '2', 'idck2' ); ?>
+			<?php frmk( 'checkbox', 'namecheckbox', 'Texto Checkbox 1', '1', null, 'idck1' ); ?>
+			<?php frmk( 'checkbox', 'namecheckbox', 'Texto Checkbox 2', '2', null, 'idck2' ); ?>
 		</div>
 
 	</div>
